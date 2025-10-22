@@ -198,6 +198,13 @@ input[type=number] {
 .flex {
   display: flex;
   gap: 20px;
+  margin: 0;
+}
+
+.container {
+  width: calc(33vw - 20px);
+  height: 100vh;
+  border: 0;
 }
 
 @media screen and (max-width:900px) {
@@ -207,7 +214,9 @@ input[type=number] {
     margin-top: 0;
     font-size: 3em;
   }
-  
+  .container{
+    width: 100vw;
+  }
   .wrapper {
     margin-left: 0;
     max-width: unset;
