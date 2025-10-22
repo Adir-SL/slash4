@@ -1,13 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="slash4.js"></script>
     <title>Slash4</title>
 </head>
+
 <body>
     <h1>Slash4</h1>
+    <div class="wrapper">
+        <div class="areaDiv flex">
+            <div>
+                Input:
+                <input class="input" id="newHeight" type="number" pattern="[\d]*" inputmode="numeric" value="22"
+                    oninput="slash4Calc(event);">
+            </div>
+            <div>
+                Output:
+                <div class="input" id="output" style="min-width: 64px;" var="24">6</div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
