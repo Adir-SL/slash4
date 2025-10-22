@@ -209,6 +209,22 @@ input[type=number] {
 
 body {
   margin: 0;
+  overflow: hidden;
+}
+
+nav {
+  display: none;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: black;
+  padding: 24px;
+  gap: 60px;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 @media screen and (max-width:900px) {
@@ -217,10 +233,6 @@ body {
     margin-bottom: 0.25em;
     margin-top: 0;
     font-size: 3em;
-  }
-  
-  .container {
-    width: 100vw;
   }
   
   .wrapper {
@@ -261,8 +273,25 @@ body {
 }
 
 @media screen and (max-width:500px) {
+  div.container {
+    box-sizing: border-box;
+    padding: 24px;
+  }
+  
+  nav {
+    display: flex;
+  }
+  
+  .anchor {
+    padding-top: 60px;
+  }
+  
+  .container {
+    width: 100vw;
+  }
+  
   body {
-    margin: 24px;
+    margin: 0;
   }
   
   .flex {
