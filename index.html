@@ -16,25 +16,29 @@
         <a href="#scale">Scale</a>
     </nav>
     <div class="flex">
-        <a id="slash" class="anchor"></a>
         <div class="container">
-            <h1>Slash4</h1>
-            <div class="wrapper">
-                <div class="areaDiv flex">
-                    <div>
-                        Input:
-                        <input class="input" id="newHeight" type="number" pattern="[\d]*" inputmode="numeric" value="22"
-                            oninput="slash4Calc(event);">
-                    </div>
-                    <div>
-                        Output:
-                        <div class="input" id="output" style="min-width: 64px;" var="24">6</div>
+            <a id="slash" class="anchor"></a>
+            <div class="flex" style="flex-direction: column;">
+                <h1>Slash4</h1>
+                <div class="wrapper">
+                    <div class="areaDiv flex">
+                        <div>
+                            Input:
+                            <input class="input" id="newHeight" type="number" pattern="[\d]*" inputmode="numeric"
+                                value="22" oninput="slash4Calc(event);">
+                        </div>
+                        <div>
+                            Output:
+                            <div class="input" id="output" style="min-width: 64px;" var="24">6</div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <a id="scale" class="anchor"></a>
-        <iframe class="container" src="https://adir-sl.github.io/scale"></iframe>
+        <div class="container">
+            <a id="scale" class="anchor"></a>
+            <iframe src="https://adir-sl.github.io/scale"></iframe>
+        </div>
     </div>
 </body>
 
